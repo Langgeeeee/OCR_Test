@@ -1,0 +1,21 @@
+{
+  "results": [
+    {
+      "engine": "PaddleOCR",
+      "text": "Mini-Task-OCR Prototype\nGoal\nCompare at least two OCR engines (eg.,PaddleOCR and ANYone more)on real-world docs\nand recommend the best one. It should work on PDFs, and Images.\nScope\nArea\nMust-have\nIngestion UI\nSingle-page React drop-zone accepting PDF & images; show upload\nprogress + error states.\nOCR pipeline\nUnified wrappersoeachenginerunswithonefunctioncall;captureraw\ntext, per-page confidence (if available),and latency\nOn-screen\nAfter each upload,show a side-by-side panel with:engine name, tex\noutput\nsnippet (first 300 chars), confidence,and total ms elapsed.Store data\nto a DB of your choice and add a basic search over it.\nBenchmark\nCLI or notebook that batch-processes ≥20 mixed docs (invoices, IDs,\nscript\nphotos) and writes a CSV/Markdown tableof accuracy,avg latency\nand estimated $/page.\nRecommendatio\n≤/-page rationale naming the winner and why (trade-offs OK)\nn\nTechnology\nFront-end: React (Next.js) + any drop-zone lib\nBack-end: Node.js/TypeScript or Python/FastAPI\nEverything dockerized; run with docker compose up.\nNice-to-Have (tiebreakers)\nSession search across in-memory results.\nVisual diff of engine outputs.\nCost analysis for cloud engines.\n\nDeliverables\n1.Git repo with clean commits.\n2.README.md (setupin ≤5lines,briefarchitecture sketch).\n3. Benchmark report (report .md or notebook).\n4.  (Optional) ≤2-min Loom/video demo.\nTimebox:offor.Focusonclaritycodeualitandinight.",
+      "confidence": 0.9340013727253558,
+      "processing_time": 117564.58902359009
+    },
+    {
+      "engine": "Tesseract",
+      "text": "Mini-Task - OCR Prototype Goal ‘Compare atleast two OCR engines PaddleOCR and ANY one more) on real-world docs ‘and recommend the best one. It should work on POF, and Images. Scope ‘roa Must-have Ingestion UI _Single-page React drop-zone accepting PF & images; show upload progress + error states. OCR pipeline Unified wrapper so each engine runs with one function cal; capture raw text, per-page confidence (if availabe), and latency. On-screen Ater each upload, show a side-by-side panel with: engine name, text output snippet (first 300 chars), confidence, and total ms elapsed. Store data toa DB of your choice and add a basic search over it Benchmark CLI or notebook that batch-processes 220 mixed docs (invoices, IDs, seript photos) and writes a CSViMarkdown table of accuracy’, avg latency, and estimated S/page. Recommendatio <'é-page rationale naming the winner and why (trade-offs OK). Technology + Front-end: React (Nextjs) + any deop-zone Ib. ‘© Back-end: Node,j/TypeScrit or Python/FastaP!. ‘© Everything dockerized; run with docker compose up. Nice-to-Have (tiebreakers) ‘© Session search across in-memory results ‘© Visual df of engine outputs. ‘© Cost analysis for cloud engines.\n\nDeliverables 41. Git repo with clean commits. 2. README. md (setup in 5 lines, bref architecture sketch). 3. Benchmark report (report .md or notebook). 4. (Optional) <2-min Loomivideo demo, Timebox: 6 of effor. Focus on clanty, code quality, and insight",
+      "confidence": 0.7837962257207207,
+      "processing_time": 542.5460338592529
+    }
+  ],
+  "file_metadata": {
+    "filename": "testpdf1.pdf",
+    "pages": 2,
+    "size": 82649
+  }
+}
